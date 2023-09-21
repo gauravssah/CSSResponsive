@@ -38,3 +38,122 @@
 
 
 /* --------------------------------------- */
+
+/* ################################################################### */
+
+.code-container {
+    margin-bottom: 20px;
+}
+
+body {
+    background-color: #333;
+}
+
+.code {
+    background-color: #222;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Courier New', monospace;
+}
+
+.code-path {
+    font-size: 14px;
+    color: #666;
+}
+
+.copy-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Style for the heading */
+.heading {
+    background-color: #222;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.heading-text {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Add different colors for each media query */
+.media-query {
+    background-color: #333;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+/* Apply syntax highlighting to code inside media queries */
+.media-query code {
+    display: block;
+    background-color: #333;
+    color: #00ff00;
+    /* Green text color for highlighting */
+    padding: 5px;
+
+}
+
+/* Apply syntax highlighting to code inside media queries */
+.media-query code {
+    display: block;
+    background-color: #333;
+    color: #00ff00;
+    /* Green text color for highlighting */
+    padding: 10px;
+    /* Increase padding for better readability on smaller screens */
+    white-space: pre-wrap;
+    /* Allow text to wrap within the code box */
+    overflow: auto;
+    /* Add scrollbars if needed for long code blocks */
+}
+
+
+
+
+/* Mobile-first approach */
+/* Styles for small screens */
+@media (max-width: 480px) {
+    .heading-text {
+        font-size: 16px;
+    }
+
+    .code-container {
+        margin: 10px;
+    }
+}
+
+/* Styles for medium screens */
+@media (min-width: 481px) and (max-width: 768px) {
+    .heading-text {
+        font-size: 20px;
+    }
+
+    .code-container {
+        margin: 20px;
+    }
+}
+
+/* Styles for large screens */
+@media (min-width: 769px) {
+    .heading-text {
+        font-size: 24px;
+    }
+
+    .code-container {
+        margin: 30px;
+    }
+}

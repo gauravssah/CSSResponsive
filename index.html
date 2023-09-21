@@ -9,8 +9,98 @@
 </head>
 
 <body>
-    <h1>CSS RESPONSIVE</h1>
+    <div class="heading">
+        <span class="heading-text">Responsive Web Design - Media Queries</span>
+    </div>
 
+    <div class="code-container">
+        <div class="media-query">
+            <span class="code-path">File: styles.css</span>
+            <pre class="code">
+                <code>
+                    /* ##################### 1201px to more ####################### */
+                </code>
+            </pre>
+            <button class="copy-button" onclick="copyCode(this)">Copy</button>
+        </div>
+    </div>
+
+    <div class="code-container">
+        <div class="media-query">
+            <pre class="code">
+                <code>
+                    <h4> /* ##################### 1025px to 1200px ####################### */</h4>
+                    @media (min-width: 1025px) and (max-width: 1200px) {}
+                </code>
+            </pre>
+            <button class="copy-button" onclick="copyCode(this)">Copy</button>
+        </div>
+    </div>
+
+    <div class="code-container">
+        <div class="media-query">
+            <pre class="code">
+                <code>
+                   <h4> /* ##################### 769px to 1024px ####################### */</h4>
+                    @media (min-width: 769px) and (max-width: 1024px) {}
+                </code>
+            </pre>
+            <button class="copy-button" onclick="copyCode(this)">Copy</button>
+        </div>
+    </div>
+
+    <div class="code-container">
+        <div class="media-query">
+            <pre class="code">
+                <code>
+                   <h4> /* ##################### 481px to 768px ####################### */</h4>
+                    @media (min-width: 481px) and (max-width: 768px) {}
+                </code>
+            </pre>
+            <button class="copy-button" onclick="copyCode(this)">Copy</button>
+        </div>
+    </div>
+
+    <div class="code-container">
+        <div class="media-query">
+            <pre class="code">
+                <code>
+                   <h4> /* ##################### 320px to 480px ####################### */</h4>
+                    @media (min-width: 320px) and (max-width: 480px) {}
+                </code>
+            </pre>
+            <button class="copy-button" onclick="copyCode(this)">Copy</button>
+        </div>
+    </div>
+
+    <div class="code-container">
+        <div class="media-query">
+            <pre class="code">
+                <code>
+                  <h4>  /* ##################### 280px to 321px ####################### */</h4>
+                    @media (max-width: 321px) {}
+                </code>
+            </pre>
+            <button class="copy-button" onclick="copyCode(this)">Copy</button>
+        </div>
+    </div>
+
+    <script>
+        function copyCode(button) {
+            const codeElement = button.parentElement.querySelector('.code code');
+            const codeText = codeElement.textContent;
+
+            const textArea = document.createElement('textarea');
+            textArea.value = codeText;
+
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textArea);
+
+            alert('Code copied to clipboard');
+        }
+    </script>
 </body>
 
 </html>
